@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +106,12 @@
     <EmbeddedResource Include="UserControl_PKD_2_2.resx">
       <DependentUpon>UserControl_PKD_2_2.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\ProbnikMannika-master\LKDS_Type\LKDS_Type.csproj">
+      <Project>{3ed964fa-60ad-4af0-bf96-082f740ec5b0}</Project>
+      <Name>LKDS_Type</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,26 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DeviceManagerLKDS.Classes.Enums;
+using LKDS_Type;
 
 namespace DeviceManagerLKDS
 {
-    public partial class UserControl_ASK : UserControl
+    public partial class UserControl_ASK : Parent
     {
         public UserControl_ASK()
         {
             InitializeComponent();
         }
-        public void SetData(byte[] array)
+        public override void SetData(byte[] array, ushort address)
         {
-
             //string str =dlajskldj.GetNameOfEnum();
 
             if (array.Length>=32)
             {
-                CAN_Devices type = (CAN_Devices)array[1];
-                Device_Status status = (Device_Status)array[0];
-                if(type == CAN_Devices.ASK)
+                EnumHelper.CAN_Devices type = (EnumHelper.CAN_Devices)array[1];
+                EnumHelper.Device_Status status = (EnumHelper.Device_Status)array[0];
+                if(type == EnumHelper.CAN_Devices.ASK)
                 {
                     device_status_tb.Text = status.GetNameOfEnum();
                     device_name_tb.Text = type.GetNameOfEnum();
@@ -68,6 +67,90 @@ namespace DeviceManagerLKDS
                     software_version_tb.Text = $"{array[8]}.{array[9]}.{array[10]}";
                 }
             }
+        }
+
+        private void reset_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x00);
+        }
+
+        private void reset1_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x01);
+        }
+        private void reset2_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x02);
+        }
+
+        private void reset3_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x03);
+        }
+
+        private void reset4_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x04);
+        }
+
+        private void reset5_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x05);
+        }
+
+        private void reset6_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x06);
+        }
+
+        private void reset7_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x07);
+        }
+
+        private void reset8_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x08);
+        }
+
+        private void reset9_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x09);
+        }
+
+        private void reset10_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x10);
+        }
+
+        private void reset11_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x11);
+        }
+
+        private void reset12_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x12);
+        }
+
+        private void reset13_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x13);
+        }
+
+        private void reset14_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x14);
+        }
+
+        private void reset15_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x15);
+        }
+
+        private void reset16_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x16);
         }
     }
 }

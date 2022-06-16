@@ -79,6 +79,9 @@ namespace DeviceManagerLKDS
             this.trigger_state_lb = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.vykl_btn3 = new System.Windows.Forms.Button();
+            this.vkl_btn3 = new System.Windows.Forms.Button();
+            this.out_pb3 = new System.Windows.Forms.PictureBox();
             this.vykl_btn2 = new System.Windows.Forms.Button();
             this.vykl_btn1 = new System.Windows.Forms.Button();
             this.vkl_btn2 = new System.Windows.Forms.Button();
@@ -86,9 +89,6 @@ namespace DeviceManagerLKDS
             this.out_pb2 = new System.Windows.Forms.PictureBox();
             this.out_pb1 = new System.Windows.Forms.PictureBox();
             this.management_lb = new System.Windows.Forms.Label();
-            this.vykl_btn3 = new System.Windows.Forms.Button();
-            this.vkl_btn3 = new System.Windows.Forms.Button();
-            this.out_pb3 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.apu_pb)).BeginInit();
@@ -113,9 +113,9 @@ namespace DeviceManagerLKDS
             ((System.ComponentModel.ISupportInitialize)(this.in_1_pb_ts)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -447,6 +447,7 @@ namespace DeviceManagerLKDS
             this.reset_btn.TabIndex = 10;
             this.reset_btn.Text = "СБРОС";
             this.reset_btn.UseVisualStyleBackColor = false;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // panel6
             // 
@@ -481,6 +482,7 @@ namespace DeviceManagerLKDS
             this.reset7_btn.TabIndex = 38;
             this.reset7_btn.Text = "Сброс";
             this.reset7_btn.UseVisualStyleBackColor = false;
+            this.reset7_btn.Click += new System.EventHandler(this.reset7_btn_Click);
             // 
             // reset6_btn
             // 
@@ -493,6 +495,7 @@ namespace DeviceManagerLKDS
             this.reset6_btn.TabIndex = 37;
             this.reset6_btn.Text = "Сброс";
             this.reset6_btn.UseVisualStyleBackColor = false;
+            this.reset6_btn.Click += new System.EventHandler(this.reset6_btn_Click);
             // 
             // reset5_btn
             // 
@@ -505,6 +508,7 @@ namespace DeviceManagerLKDS
             this.reset5_btn.TabIndex = 36;
             this.reset5_btn.Text = "Сброс";
             this.reset5_btn.UseVisualStyleBackColor = false;
+            this.reset5_btn.Click += new System.EventHandler(this.reset5_btn_Click);
             // 
             // reset4_btn
             // 
@@ -517,6 +521,7 @@ namespace DeviceManagerLKDS
             this.reset4_btn.TabIndex = 35;
             this.reset4_btn.Text = "Сброс";
             this.reset4_btn.UseVisualStyleBackColor = false;
+            this.reset4_btn.Click += new System.EventHandler(this.reset4_btn_Click);
             // 
             // reset3_btn
             // 
@@ -529,6 +534,7 @@ namespace DeviceManagerLKDS
             this.reset3_btn.TabIndex = 34;
             this.reset3_btn.Text = "Сброс";
             this.reset3_btn.UseVisualStyleBackColor = false;
+            this.reset3_btn.Click += new System.EventHandler(this.reset3_btn_Click);
             // 
             // reset2_btn
             // 
@@ -541,6 +547,7 @@ namespace DeviceManagerLKDS
             this.reset2_btn.TabIndex = 33;
             this.reset2_btn.Text = "Сброс";
             this.reset2_btn.UseVisualStyleBackColor = false;
+            this.reset2_btn.Click += new System.EventHandler(this.reset2_btn_Click);
             // 
             // reset1_btn
             // 
@@ -553,6 +560,7 @@ namespace DeviceManagerLKDS
             this.reset1_btn.TabIndex = 32;
             this.reset1_btn.Text = "Сброс";
             this.reset1_btn.UseVisualStyleBackColor = false;
+            this.reset1_btn.Click += new System.EventHandler(this.reset1_btn_Click);
             // 
             // in_7_pb_ts
             // 
@@ -654,6 +662,39 @@ namespace DeviceManagerLKDS
             this.panel7.Size = new System.Drawing.Size(221, 267);
             this.panel7.TabIndex = 10;
             // 
+            // vykl_btn3
+            // 
+            this.vykl_btn3.BackColor = System.Drawing.Color.Lavender;
+            this.vykl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vykl_btn3.Location = new System.Drawing.Point(132, 173);
+            this.vykl_btn3.Name = "vykl_btn3";
+            this.vykl_btn3.Size = new System.Drawing.Size(50, 32);
+            this.vykl_btn3.TabIndex = 48;
+            this.vykl_btn3.Text = "Выкл";
+            this.vykl_btn3.UseVisualStyleBackColor = false;
+            this.vykl_btn3.Click += new System.EventHandler(this.vykl_btn3_Click);
+            // 
+            // vkl_btn3
+            // 
+            this.vkl_btn3.BackColor = System.Drawing.Color.Lavender;
+            this.vkl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vkl_btn3.Location = new System.Drawing.Point(38, 173);
+            this.vkl_btn3.Name = "vkl_btn3";
+            this.vkl_btn3.Size = new System.Drawing.Size(50, 32);
+            this.vkl_btn3.TabIndex = 47;
+            this.vkl_btn3.Text = "Вкл";
+            this.vkl_btn3.UseVisualStyleBackColor = false;
+            this.vkl_btn3.Click += new System.EventHandler(this.vkl_btn3_Click);
+            // 
+            // out_pb3
+            // 
+            this.out_pb3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.out_pb3.Location = new System.Drawing.Point(94, 173);
+            this.out_pb3.Name = "out_pb3";
+            this.out_pb3.Size = new System.Drawing.Size(32, 32);
+            this.out_pb3.TabIndex = 46;
+            this.out_pb3.TabStop = false;
+            // 
             // vykl_btn2
             // 
             this.vykl_btn2.BackColor = System.Drawing.Color.Lavender;
@@ -664,6 +705,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn2.TabIndex = 45;
             this.vykl_btn2.Text = "Выкл";
             this.vykl_btn2.UseVisualStyleBackColor = false;
+            this.vykl_btn2.Click += new System.EventHandler(this.vykl_btn2_Click);
             // 
             // vykl_btn1
             // 
@@ -675,6 +717,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn1.TabIndex = 44;
             this.vykl_btn1.Text = "Выкл";
             this.vykl_btn1.UseVisualStyleBackColor = false;
+            this.vykl_btn1.Click += new System.EventHandler(this.vykl_btn1_Click);
             // 
             // vkl_btn2
             // 
@@ -686,6 +729,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn2.TabIndex = 43;
             this.vkl_btn2.Text = "Вкл";
             this.vkl_btn2.UseVisualStyleBackColor = false;
+            this.vkl_btn2.Click += new System.EventHandler(this.vkl_btn2_Click);
             // 
             // vkl_btn1
             // 
@@ -697,6 +741,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn1.TabIndex = 42;
             this.vkl_btn1.Text = "Вкл";
             this.vkl_btn1.UseVisualStyleBackColor = false;
+            this.vkl_btn1.Click += new System.EventHandler(this.vkl_btn1_Click);
             // 
             // out_pb2
             // 
@@ -725,37 +770,6 @@ namespace DeviceManagerLKDS
             this.management_lb.Size = new System.Drawing.Size(102, 26);
             this.management_lb.TabIndex = 8;
             this.management_lb.Text = "Управление";
-            // 
-            // vykl_btn3
-            // 
-            this.vykl_btn3.BackColor = System.Drawing.Color.Lavender;
-            this.vykl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vykl_btn3.Location = new System.Drawing.Point(132, 173);
-            this.vykl_btn3.Name = "vykl_btn3";
-            this.vykl_btn3.Size = new System.Drawing.Size(50, 32);
-            this.vykl_btn3.TabIndex = 48;
-            this.vykl_btn3.Text = "Выкл";
-            this.vykl_btn3.UseVisualStyleBackColor = false;
-            // 
-            // vkl_btn3
-            // 
-            this.vkl_btn3.BackColor = System.Drawing.Color.Lavender;
-            this.vkl_btn3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vkl_btn3.Location = new System.Drawing.Point(38, 173);
-            this.vkl_btn3.Name = "vkl_btn3";
-            this.vkl_btn3.Size = new System.Drawing.Size(50, 32);
-            this.vkl_btn3.TabIndex = 47;
-            this.vkl_btn3.Text = "Вкл";
-            this.vkl_btn3.UseVisualStyleBackColor = false;
-            // 
-            // out_pb3
-            // 
-            this.out_pb3.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.out_pb3.Location = new System.Drawing.Point(94, 173);
-            this.out_pb3.Name = "out_pb3";
-            this.out_pb3.Size = new System.Drawing.Size(32, 32);
-            this.out_pb3.TabIndex = 46;
-            this.out_pb3.TabStop = false;
             // 
             // UserControl_APU
             // 
@@ -794,9 +808,9 @@ namespace DeviceManagerLKDS
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.out_pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.out_pb1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.out_pb3)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -207,6 +207,7 @@ namespace DeviceManagerLKDS
             this.reset_btn.TabIndex = 9;
             this.reset_btn.Text = "СБРОС";
             this.reset_btn.UseVisualStyleBackColor = false;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // panel6
             // 
@@ -259,6 +260,7 @@ namespace DeviceManagerLKDS
             this.reset9_btn.TabIndex = 47;
             this.reset9_btn.Text = "Сброс";
             this.reset9_btn.UseVisualStyleBackColor = false;
+            this.reset9_btn.Click += new System.EventHandler(this.reset9_btn_Click);
             // 
             // reset10_btn
             // 
@@ -271,6 +273,7 @@ namespace DeviceManagerLKDS
             this.reset10_btn.TabIndex = 46;
             this.reset10_btn.Text = "Сброс";
             this.reset10_btn.UseVisualStyleBackColor = false;
+            this.reset10_btn.Click += new System.EventHandler(this.reset10_btn_Click);
             // 
             // reset11_btn
             // 
@@ -283,6 +286,7 @@ namespace DeviceManagerLKDS
             this.reset11_btn.TabIndex = 45;
             this.reset11_btn.Text = "Сброс";
             this.reset11_btn.UseVisualStyleBackColor = false;
+            this.reset11_btn.Click += new System.EventHandler(this.reset11_btn_Click);
             // 
             // reset12_btn
             // 
@@ -295,6 +299,7 @@ namespace DeviceManagerLKDS
             this.reset12_btn.TabIndex = 44;
             this.reset12_btn.Text = "Сброс";
             this.reset12_btn.UseVisualStyleBackColor = false;
+            this.reset12_btn.Click += new System.EventHandler(this.reset12_btn_Click);
             // 
             // reset13_btn
             // 
@@ -307,6 +312,7 @@ namespace DeviceManagerLKDS
             this.reset13_btn.TabIndex = 43;
             this.reset13_btn.Text = "Сброс";
             this.reset13_btn.UseVisualStyleBackColor = false;
+            this.reset13_btn.Click += new System.EventHandler(this.reset13_btn_Click);
             // 
             // reset14_btn
             // 
@@ -319,6 +325,7 @@ namespace DeviceManagerLKDS
             this.reset14_btn.TabIndex = 42;
             this.reset14_btn.Text = "Сброс";
             this.reset14_btn.UseVisualStyleBackColor = false;
+            this.reset14_btn.Click += new System.EventHandler(this.reset14_btn_Click);
             // 
             // reset15_btn
             // 
@@ -331,6 +338,7 @@ namespace DeviceManagerLKDS
             this.reset15_btn.TabIndex = 41;
             this.reset15_btn.Text = "Сброс";
             this.reset15_btn.UseVisualStyleBackColor = false;
+            this.reset15_btn.Click += new System.EventHandler(this.reset15_btn_Click);
             // 
             // reset16_btn
             // 
@@ -343,6 +351,7 @@ namespace DeviceManagerLKDS
             this.reset16_btn.TabIndex = 40;
             this.reset16_btn.Text = "Сброс";
             this.reset16_btn.UseVisualStyleBackColor = false;
+            this.reset16_btn.Click += new System.EventHandler(this.reset16_btn_Click);
             // 
             // reset8_btn
             // 
@@ -355,6 +364,7 @@ namespace DeviceManagerLKDS
             this.reset8_btn.TabIndex = 39;
             this.reset8_btn.Text = "Сброс";
             this.reset8_btn.UseVisualStyleBackColor = false;
+            this.reset8_btn.Click += new System.EventHandler(this.reset8_btn_Click);
             // 
             // reset7_btn
             // 
@@ -367,6 +377,7 @@ namespace DeviceManagerLKDS
             this.reset7_btn.TabIndex = 38;
             this.reset7_btn.Text = "Сброс";
             this.reset7_btn.UseVisualStyleBackColor = false;
+            this.reset7_btn.Click += new System.EventHandler(this.reset7_btn_Click);
             // 
             // reset6_btn
             // 
@@ -379,6 +390,7 @@ namespace DeviceManagerLKDS
             this.reset6_btn.TabIndex = 37;
             this.reset6_btn.Text = "Сброс";
             this.reset6_btn.UseVisualStyleBackColor = false;
+            this.reset6_btn.Click += new System.EventHandler(this.reset6_btn_Click);
             // 
             // reset5_btn
             // 
@@ -391,6 +403,7 @@ namespace DeviceManagerLKDS
             this.reset5_btn.TabIndex = 36;
             this.reset5_btn.Text = "Сброс";
             this.reset5_btn.UseVisualStyleBackColor = false;
+            this.reset5_btn.Click += new System.EventHandler(this.reset5_btn_Click);
             // 
             // reset4_btn
             // 
@@ -403,6 +416,7 @@ namespace DeviceManagerLKDS
             this.reset4_btn.TabIndex = 35;
             this.reset4_btn.Text = "Сброс";
             this.reset4_btn.UseVisualStyleBackColor = false;
+            this.reset4_btn.Click += new System.EventHandler(this.reset4_btn_Click);
             // 
             // reset3_btn
             // 
@@ -415,6 +429,7 @@ namespace DeviceManagerLKDS
             this.reset3_btn.TabIndex = 34;
             this.reset3_btn.Text = "Сброс";
             this.reset3_btn.UseVisualStyleBackColor = false;
+            this.reset3_btn.Click += new System.EventHandler(this.reset3_btn_Click);
             // 
             // reset2_btn
             // 
@@ -427,6 +442,7 @@ namespace DeviceManagerLKDS
             this.reset2_btn.TabIndex = 33;
             this.reset2_btn.Text = "Сброс";
             this.reset2_btn.UseVisualStyleBackColor = false;
+            this.reset2_btn.Click += new System.EventHandler(this.reset2_btn_Click);
             // 
             // reset1_btn
             // 
@@ -439,6 +455,7 @@ namespace DeviceManagerLKDS
             this.reset1_btn.TabIndex = 32;
             this.reset1_btn.Text = "Сброс";
             this.reset1_btn.UseVisualStyleBackColor = false;
+            this.reset1_btn.Click += new System.EventHandler(this.reset1_btn_Click);
             // 
             // in_9_pb_ts
             // 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DeviceManagerLKDS.Classes.Enums;
+using LKDS_Type;
 
 namespace DeviceManagerLKDS
 {
@@ -24,10 +24,10 @@ namespace DeviceManagerLKDS
 
             if (array.Length >= 32)
             {
-                CAN_Devices type = (CAN_Devices)array[1];
-                Device_Status status = (Device_Status)array[0];
-                Key_Format format = (Key_Format)array[15];
-                if (type == CAN_Devices.ATU)
+                EnumHelper.CAN_Devices type = (EnumHelper.CAN_Devices)array[1];
+                EnumHelper.Device_Status status = (EnumHelper.Device_Status)array[0];
+                EnumHelper.Key_Format format = (EnumHelper.Key_Format)array[15];
+                if (type == EnumHelper.CAN_Devices.ATU)
                 {
                     device_status_tb.Text = status.GetNameOfEnum();
                     device_name_tb.Text = type.GetNameOfEnum();
