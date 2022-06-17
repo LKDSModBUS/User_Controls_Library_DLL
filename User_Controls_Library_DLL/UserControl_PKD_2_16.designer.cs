@@ -212,6 +212,7 @@ namespace DeviceManagerLKDS
             // 
             this.key_format_tb.Location = new System.Drawing.Point(359, 169);
             this.key_format_tb.Name = "key_format_tb";
+            this.key_format_tb.ReadOnly = true;
             this.key_format_tb.Size = new System.Drawing.Size(346, 20);
             this.key_format_tb.TabIndex = 19;
             // 
@@ -229,6 +230,7 @@ namespace DeviceManagerLKDS
             // 
             this.key_number_tb.Location = new System.Drawing.Point(359, 142);
             this.key_number_tb.Name = "key_number_tb";
+            this.key_number_tb.ReadOnly = true;
             this.key_number_tb.Size = new System.Drawing.Size(346, 20);
             this.key_number_tb.TabIndex = 17;
             // 
@@ -246,6 +248,7 @@ namespace DeviceManagerLKDS
             // 
             this.software_version_tb.Location = new System.Drawing.Point(359, 110);
             this.software_version_tb.Name = "software_version_tb";
+            this.software_version_tb.ReadOnly = true;
             this.software_version_tb.Size = new System.Drawing.Size(346, 20);
             this.software_version_tb.TabIndex = 15;
             // 
@@ -253,6 +256,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_address_tb.Location = new System.Drawing.Point(359, 77);
             this.device_address_tb.Name = "device_address_tb";
+            this.device_address_tb.ReadOnly = true;
             this.device_address_tb.Size = new System.Drawing.Size(346, 20);
             this.device_address_tb.TabIndex = 13;
             // 
@@ -260,6 +264,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_status_tb.Location = new System.Drawing.Point(359, 43);
             this.device_status_tb.Name = "device_status_tb";
+            this.device_status_tb.ReadOnly = true;
             this.device_status_tb.Size = new System.Drawing.Size(346, 20);
             this.device_status_tb.TabIndex = 12;
             // 
@@ -267,6 +272,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_name_tb.Location = new System.Drawing.Point(359, 9);
             this.device_name_tb.Name = "device_name_tb";
+            this.device_name_tb.ReadOnly = true;
             this.device_name_tb.Size = new System.Drawing.Size(346, 20);
             this.device_name_tb.TabIndex = 11;
             // 
@@ -514,6 +520,7 @@ namespace DeviceManagerLKDS
             this.reset_btn.TabIndex = 10;
             this.reset_btn.Text = "СБРОС";
             this.reset_btn.UseVisualStyleBackColor = false;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // panel6
             // 
@@ -546,6 +553,7 @@ namespace DeviceManagerLKDS
             this.reset6_btn.TabIndex = 37;
             this.reset6_btn.Text = "Сброс";
             this.reset6_btn.UseVisualStyleBackColor = false;
+            this.reset6_btn.Click += new System.EventHandler(this.reset6_btn_Click);
             // 
             // reset5_btn
             // 
@@ -558,6 +566,7 @@ namespace DeviceManagerLKDS
             this.reset5_btn.TabIndex = 36;
             this.reset5_btn.Text = "Сброс";
             this.reset5_btn.UseVisualStyleBackColor = false;
+            this.reset5_btn.Click += new System.EventHandler(this.reset5_btn_Click);
             // 
             // reset4_btn
             // 
@@ -570,6 +579,7 @@ namespace DeviceManagerLKDS
             this.reset4_btn.TabIndex = 35;
             this.reset4_btn.Text = "Сброс";
             this.reset4_btn.UseVisualStyleBackColor = false;
+            this.reset4_btn.Click += new System.EventHandler(this.reset4_btn_Click);
             // 
             // reset3_btn
             // 
@@ -582,6 +592,7 @@ namespace DeviceManagerLKDS
             this.reset3_btn.TabIndex = 34;
             this.reset3_btn.Text = "Сброс";
             this.reset3_btn.UseVisualStyleBackColor = false;
+            this.reset3_btn.Click += new System.EventHandler(this.reset3_btn_Click);
             // 
             // reset2_btn
             // 
@@ -594,6 +605,7 @@ namespace DeviceManagerLKDS
             this.reset2_btn.TabIndex = 33;
             this.reset2_btn.Text = "Сброс";
             this.reset2_btn.UseVisualStyleBackColor = false;
+            this.reset2_btn.Click += new System.EventHandler(this.reset2_btn_Click);
             // 
             // reset1_btn
             // 
@@ -606,6 +618,7 @@ namespace DeviceManagerLKDS
             this.reset1_btn.TabIndex = 32;
             this.reset1_btn.Text = "Сброс";
             this.reset1_btn.UseVisualStyleBackColor = false;
+            this.reset1_btn.Click += new System.EventHandler(this.reset1_btn_Click);
             // 
             // in_6_pb_ts
             // 
@@ -747,6 +760,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn9.TabIndex = 87;
             this.vykl_btn9.Text = "Выкл";
             this.vykl_btn9.UseVisualStyleBackColor = false;
+            this.vykl_btn9.Click += new System.EventHandler(this.vykl_btn9_Click);
             // 
             // vykl_btn10
             // 
@@ -758,6 +772,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn10.TabIndex = 86;
             this.vykl_btn10.Text = "Выкл";
             this.vykl_btn10.UseVisualStyleBackColor = false;
+            this.vykl_btn10.Click += new System.EventHandler(this.vykl_btn10_Click);
             // 
             // vkl_btn9
             // 
@@ -769,6 +784,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn9.TabIndex = 85;
             this.vkl_btn9.Text = "Вкл";
             this.vkl_btn9.UseVisualStyleBackColor = false;
+            this.vkl_btn9.Click += new System.EventHandler(this.vkl_btn9_Click);
             // 
             // vkl_btn10
             // 
@@ -780,6 +796,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn10.TabIndex = 84;
             this.vkl_btn10.Text = "Вкл";
             this.vkl_btn10.UseVisualStyleBackColor = false;
+            this.vkl_btn10.Click += new System.EventHandler(this.vkl_btn10_Click);
             // 
             // out_pb9
             // 
@@ -809,6 +826,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn11.TabIndex = 81;
             this.vykl_btn11.Text = "Выкл";
             this.vykl_btn11.UseVisualStyleBackColor = false;
+            this.vykl_btn11.Click += new System.EventHandler(this.vykl_btn11_Click);
             // 
             // vykl_btn12
             // 
@@ -820,6 +838,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn12.TabIndex = 80;
             this.vykl_btn12.Text = "Выкл";
             this.vykl_btn12.UseVisualStyleBackColor = false;
+            this.vykl_btn12.Click += new System.EventHandler(this.vykl_btn12_Click);
             // 
             // vkl_btn11
             // 
@@ -831,6 +850,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn11.TabIndex = 79;
             this.vkl_btn11.Text = "Вкл";
             this.vkl_btn11.UseVisualStyleBackColor = false;
+            this.vkl_btn11.Click += new System.EventHandler(this.vkl_btn11_Click);
             // 
             // vkl_btn12
             // 
@@ -842,6 +862,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn12.TabIndex = 78;
             this.vkl_btn12.Text = "Вкл";
             this.vkl_btn12.UseVisualStyleBackColor = false;
+            this.vkl_btn12.Click += new System.EventHandler(this.vkl_btn12_Click);
             // 
             // out_pb11
             // 
@@ -871,6 +892,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn13.TabIndex = 75;
             this.vykl_btn13.Text = "Выкл";
             this.vykl_btn13.UseVisualStyleBackColor = false;
+            this.vykl_btn13.Click += new System.EventHandler(this.vykl_btn13_Click);
             // 
             // vykl_btn14
             // 
@@ -882,6 +904,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn14.TabIndex = 74;
             this.vykl_btn14.Text = "Выкл";
             this.vykl_btn14.UseVisualStyleBackColor = false;
+            this.vykl_btn14.Click += new System.EventHandler(this.vykl_btn14_Click);
             // 
             // vkl_btn13
             // 
@@ -893,6 +916,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn13.TabIndex = 73;
             this.vkl_btn13.Text = "Вкл";
             this.vkl_btn13.UseVisualStyleBackColor = false;
+            this.vkl_btn13.Click += new System.EventHandler(this.vkl_btn13_Click);
             // 
             // vkl_btn14
             // 
@@ -904,6 +928,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn14.TabIndex = 72;
             this.vkl_btn14.Text = "Вкл";
             this.vkl_btn14.UseVisualStyleBackColor = false;
+            this.vkl_btn14.Click += new System.EventHandler(this.vkl_btn14_Click);
             // 
             // out_pb13
             // 
@@ -933,6 +958,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn15.TabIndex = 69;
             this.vykl_btn15.Text = "Выкл";
             this.vykl_btn15.UseVisualStyleBackColor = false;
+            this.vykl_btn15.Click += new System.EventHandler(this.vykl_btn15_Click);
             // 
             // vykl_btn16
             // 
@@ -944,6 +970,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn16.TabIndex = 68;
             this.vykl_btn16.Text = "Выкл";
             this.vykl_btn16.UseVisualStyleBackColor = false;
+            this.vykl_btn16.Click += new System.EventHandler(this.vykl_btn16_Click);
             // 
             // vkl_btn15
             // 
@@ -955,6 +982,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn15.TabIndex = 67;
             this.vkl_btn15.Text = "Вкл";
             this.vkl_btn15.UseVisualStyleBackColor = false;
+            this.vkl_btn15.Click += new System.EventHandler(this.vkl_btn15_Click);
             // 
             // vkl_btn16
             // 
@@ -966,6 +994,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn16.TabIndex = 66;
             this.vkl_btn16.Text = "Вкл";
             this.vkl_btn16.UseVisualStyleBackColor = false;
+            this.vkl_btn16.Click += new System.EventHandler(this.vkl_btn16_Click);
             // 
             // out_pb15
             // 
@@ -995,6 +1024,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn8.TabIndex = 63;
             this.vykl_btn8.Text = "Выкл";
             this.vykl_btn8.UseVisualStyleBackColor = false;
+            this.vykl_btn8.Click += new System.EventHandler(this.vykl_btn8_Click);
             // 
             // vykl_btn7
             // 
@@ -1006,6 +1036,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn7.TabIndex = 62;
             this.vykl_btn7.Text = "Выкл";
             this.vykl_btn7.UseVisualStyleBackColor = false;
+            this.vykl_btn7.Click += new System.EventHandler(this.vykl_btn7_Click);
             // 
             // vkl_btn8
             // 
@@ -1017,6 +1048,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn8.TabIndex = 61;
             this.vkl_btn8.Text = "Вкл";
             this.vkl_btn8.UseVisualStyleBackColor = false;
+            this.vkl_btn8.Click += new System.EventHandler(this.vkl_btn8_Click);
             // 
             // vkl_btn7
             // 
@@ -1028,6 +1060,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn7.TabIndex = 60;
             this.vkl_btn7.Text = "Вкл";
             this.vkl_btn7.UseVisualStyleBackColor = false;
+            this.vkl_btn7.Click += new System.EventHandler(this.vkl_btn7_Click);
             // 
             // out_pb8
             // 
@@ -1057,6 +1090,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn6.TabIndex = 57;
             this.vykl_btn6.Text = "Выкл";
             this.vykl_btn6.UseVisualStyleBackColor = false;
+            this.vykl_btn6.Click += new System.EventHandler(this.vykl_btn6_Click);
             // 
             // vykl_btn5
             // 
@@ -1068,6 +1102,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn5.TabIndex = 56;
             this.vykl_btn5.Text = "Выкл";
             this.vykl_btn5.UseVisualStyleBackColor = false;
+            this.vykl_btn5.Click += new System.EventHandler(this.vykl_btn5_Click);
             // 
             // vkl_btn6
             // 
@@ -1079,6 +1114,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn6.TabIndex = 55;
             this.vkl_btn6.Text = "Вкл";
             this.vkl_btn6.UseVisualStyleBackColor = false;
+            this.vkl_btn6.Click += new System.EventHandler(this.vkl_btn6_Click);
             // 
             // vkl_btn5
             // 
@@ -1090,6 +1126,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn5.TabIndex = 54;
             this.vkl_btn5.Text = "Вкл";
             this.vkl_btn5.UseVisualStyleBackColor = false;
+            this.vkl_btn5.Click += new System.EventHandler(this.vkl_btn5_Click);
             // 
             // out_pb6
             // 
@@ -1119,6 +1156,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn4.TabIndex = 51;
             this.vykl_btn4.Text = "Выкл";
             this.vykl_btn4.UseVisualStyleBackColor = false;
+            this.vykl_btn4.Click += new System.EventHandler(this.vykl_btn4_Click);
             // 
             // vykl_btn3
             // 
@@ -1130,6 +1168,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn3.TabIndex = 50;
             this.vykl_btn3.Text = "Выкл";
             this.vykl_btn3.UseVisualStyleBackColor = false;
+            this.vykl_btn3.Click += new System.EventHandler(this.vykl_btn3_Click);
             // 
             // vkl_btn4
             // 
@@ -1141,6 +1180,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn4.TabIndex = 49;
             this.vkl_btn4.Text = "Вкл";
             this.vkl_btn4.UseVisualStyleBackColor = false;
+            this.vkl_btn4.Click += new System.EventHandler(this.vkl_btn4_Click);
             // 
             // vkl_btn3
             // 
@@ -1152,6 +1192,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn3.TabIndex = 48;
             this.vkl_btn3.Text = "Вкл";
             this.vkl_btn3.UseVisualStyleBackColor = false;
+            this.vkl_btn3.Click += new System.EventHandler(this.vkl_btn3_Click);
             // 
             // out_pb4
             // 
@@ -1181,6 +1222,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn2.TabIndex = 45;
             this.vykl_btn2.Text = "Выкл";
             this.vykl_btn2.UseVisualStyleBackColor = false;
+            this.vykl_btn2.Click += new System.EventHandler(this.vykl_btn2_Click);
             // 
             // vykl_btn1
             // 
@@ -1192,6 +1234,7 @@ namespace DeviceManagerLKDS
             this.vykl_btn1.TabIndex = 44;
             this.vykl_btn1.Text = "Выкл";
             this.vykl_btn1.UseVisualStyleBackColor = false;
+            this.vykl_btn1.Click += new System.EventHandler(this.vykl_btn1_Click);
             // 
             // vkl_btn2
             // 
@@ -1203,6 +1246,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn2.TabIndex = 43;
             this.vkl_btn2.Text = "Вкл";
             this.vkl_btn2.UseVisualStyleBackColor = false;
+            this.vkl_btn2.Click += new System.EventHandler(this.vkl_btn2_Click);
             // 
             // vkl_btn1
             // 
@@ -1214,6 +1258,7 @@ namespace DeviceManagerLKDS
             this.vkl_btn1.TabIndex = 42;
             this.vkl_btn1.Text = "Вкл";
             this.vkl_btn1.UseVisualStyleBackColor = false;
+            this.vkl_btn1.Click += new System.EventHandler(this.vkl_btn1_Click);
             // 
             // out_pb2
             // 

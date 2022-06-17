@@ -11,13 +11,13 @@ using LKDS_Type;
 
 namespace DeviceManagerLKDS
 {
-    public partial class UserControl_PKD_2_16 : UserControl
+    public partial class UserControl_PKD_2_16 : Parent
     {
         public UserControl_PKD_2_16()
         {
             InitializeComponent();
         }
-        public void SetData(byte[] array)
+        public override void SetData(byte[] array, ushort address)
         {
 
             //string str =dlajskldj.GetNameOfEnum();
@@ -70,5 +70,202 @@ namespace DeviceManagerLKDS
                 }
             }
         }
+
+        private void reset1_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x01);
+        }
+
+        private void reset2_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x02);
+        }
+
+        private void reset3_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x03);
+        }
+
+        private void reset4_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x04);
+        }
+
+        private void reset5_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x05);
+        }
+
+        private void reset6_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x06);
+        }
+
+        private void reset_btn_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x00);
+        }
+
+        private void vkl_btn1_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vykl_btn1_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vkl_btn2_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn3_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn4_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn5_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn6_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn7_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn8_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vykl_btn2_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn3_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn4_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn5_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn6_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn7_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn8_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vkl_btn16_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn15_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn14_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn13_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn12_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn11_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn10_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vkl_btn9_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOn, 1);
+        }
+
+        private void vykl_btn16_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn15_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn14_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn13_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn12_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn11_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn10_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        private void vykl_btn9_Click(object sender, EventArgs e)
+        {
+            OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
+        }
+
+        
     }
 }

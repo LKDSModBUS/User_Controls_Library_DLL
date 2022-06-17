@@ -160,6 +160,7 @@ namespace DeviceManagerLKDS
             // 
             this.software_version_tb.Location = new System.Drawing.Point(359, 116);
             this.software_version_tb.Name = "software_version_tb";
+            this.software_version_tb.ReadOnly = true;
             this.software_version_tb.Size = new System.Drawing.Size(361, 20);
             this.software_version_tb.TabIndex = 15;
             // 
@@ -167,6 +168,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_address_tb.Location = new System.Drawing.Point(359, 80);
             this.device_address_tb.Name = "device_address_tb";
+            this.device_address_tb.ReadOnly = true;
             this.device_address_tb.Size = new System.Drawing.Size(361, 20);
             this.device_address_tb.TabIndex = 13;
             // 
@@ -174,6 +176,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_status_tb.Location = new System.Drawing.Point(359, 43);
             this.device_status_tb.Name = "device_status_tb";
+            this.device_status_tb.ReadOnly = true;
             this.device_status_tb.Size = new System.Drawing.Size(361, 20);
             this.device_status_tb.TabIndex = 12;
             // 
@@ -181,6 +184,7 @@ namespace DeviceManagerLKDS
             // 
             this.device_name_tb.Location = new System.Drawing.Point(359, 9);
             this.device_name_tb.Name = "device_name_tb";
+            this.device_name_tb.ReadOnly = true;
             this.device_name_tb.Size = new System.Drawing.Size(361, 20);
             this.device_name_tb.TabIndex = 11;
             // 

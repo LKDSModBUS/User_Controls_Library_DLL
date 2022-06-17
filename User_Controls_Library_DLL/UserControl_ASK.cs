@@ -152,5 +152,10 @@ namespace DeviceManagerLKDS
         {
             OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterReset, 0x16);
         }
+
+        private void device_address_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
