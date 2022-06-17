@@ -26,6 +26,7 @@ namespace DeviceManagerLKDS
             {
                 EnumHelper.CAN_Devices type = (EnumHelper.CAN_Devices)array[1];
                 EnumHelper.Device_Status status = (EnumHelper.Device_Status)array[0];
+                
                 if (type == EnumHelper.CAN_Devices.APU)
                 {
                     device_status_tb.Text = status.GetNameOfEnum();
@@ -125,5 +126,7 @@ namespace DeviceManagerLKDS
         {
             OnCmd?.Invoke(EnumHelper.CmdTypes.AdapterOff, 1);
         }
+
+       
     }
 }
